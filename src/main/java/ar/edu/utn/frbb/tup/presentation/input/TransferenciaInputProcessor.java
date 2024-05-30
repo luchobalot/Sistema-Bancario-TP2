@@ -47,11 +47,13 @@ public class TransferenciaInputProcessor extends BaseInputProcessor{
 	                cuentaDestino.agregarMovimiento(new Movimiento(Movimiento.TipoMovimiento.TRANSFERENCIA_ENTRADA, monto));
 
 	                System.out.println("Transferencia realizada exitosamente.");
-	            } else {
+	            } 
+	            else { // En caso de no tener dinero suficiente, se devuelve el siguiente error.
 	                System.out.println("Error. Saldo insuficiente en la cuenta origen.");
 	            }
 	        }
-	    } else {
+	    } 
+	    else { // En caso de que alguna de las cuentas no exista.
 	        System.out.println("Error. Una de las cuentas especificadas no existe.");
 	    }
 	}

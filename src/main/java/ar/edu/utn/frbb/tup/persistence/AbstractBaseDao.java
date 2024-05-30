@@ -1,6 +1,6 @@
 package ar.edu.utn.frbb.tup.persistence;
 
-import java.util.HashMap;
+import java.util.HashMap; 
 import java.util.Map;
 
 public abstract class AbstractBaseDao {
